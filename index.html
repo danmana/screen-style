@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Coming Soon</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body, html {
+        height: 100%;
+        overflow: hidden;
+    }
+    .container {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+    .column {
+        flex: 1;
+        overflow: hidden;
+        position: relative;
+        margin: 0 5px;
+    }
+    .column .image-container {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        animation: scroll 20s linear infinite;
+    }
+    .column1 .image-container {
+        animation-duration: 25s;
+    }
+    .column2 .image-container {
+        animation-duration: 30s;
+    }
+    .column3 .image-container {
+        animation-duration: 35s;
+    }
+    .column2 .image-container {
+        transform: translateY(-50%);
+    }
+    .column img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5px;
+    }
+    @keyframes scroll {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-50%);
+        }
+    }
+    .overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        border: 5px solid white;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px); /* For Safari */
+    }
+    .overlay h1 {
+        font-size: 6vw;
+        color: white;
+        margin: 0;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="column column1">
+        <div class="image-container">
+            <img src="images/pixel-forest1.webp" alt="">
+            <img src="images/pixel-forest2.webp" alt="">
+            <img src="images/pixel-forest3.webp" alt="">
+            <img src="images/pixel-forest4.webp" alt="">
+            <img src="images/pixel-forest1.webp" alt="">
+            <img src="images/pixel-forest2.webp" alt="">
+            <img src="images/pixel-forest3.webp" alt="">
+            <img src="images/pixel-forest4.webp" alt="">
+        </div>
+    </div>
+    <div class="column column2">
+        <div class="image-container">
+            <img src="images/japanese-red1.webp" alt="">
+            <img src="images/japanese-red2.webp" alt="">
+            <img src="images/japanese-red3.webp" alt="">
+            <img src="images/japanese-red4.webp" alt="">
+            <img src="images/japanese-red1.webp" alt="">
+            <img src="images/japanese-red2.webp" alt="">
+            <img src="images/japanese-red3.webp" alt="">
+            <img src="images/japanese-red4.webp" alt="">
+        </div>
+    </div>
+    <div class="column column3">
+        <div class="image-container">
+            <img src="images/waves1.webp" alt="">
+            <img src="images/waves2.webp" alt="">
+            <img src="images/waves3.webp" alt="">
+            <img src="images/waves4.webp" alt="">
+            <img src="images/waves1.webp" alt="">
+            <img src="images/waves2.webp" alt="">
+            <img src="images/waves3.webp" alt="">
+            <img src="images/waves4.webp" alt="">
+        </div>
+    </div>
+    <div class="overlay">
+        <h1>COMING SOON</h1>
+    </div>
+</div>
+</body>
+</html>
