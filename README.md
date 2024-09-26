@@ -1,26 +1,23 @@
-# screen-style
+# Screen Style
 https://screen.style/
 
+## V1
 
-Free Wallpapers website with donations
-screen.style
-(see mkbd fiasco with the panels wallpaper app)
-create a meme free wallpapers site
-start with 100-500 ai generated wallpapers for various categories
-- phone mode initially (add desktop later)
-- all wallpapers are free to download (no login required)
-- clean design, no ads
-- users ca "donate" 5$ or their choice to get custom wallpapers based on a prompt provided by them - their name will be listed on the wallpaper in the app
-- when a user donates, they can fill in a prompt, pick some categories, color scheme etc (for every 1$ they get 5-10 wallpapers?) -> wallpapers are then generated with Flux and a link is sent to their email. Their name will be visible for others as "Donated by @xxxx"
-- users get a personal page where they can link their twitter, and add some links/text
+Free Wallpapers
+- filter by "style"
+- download for free
+- no ads, no paywall, no login
+- a button with "Buy me a coffee" & I will make 5-10-20 new free wallpapers for each coffee (based on the style requested by the user)
 
 
-How to generate nice wallpapers? 
-- use flux-dev / flux-pro. 
-- use gpt4o to generate a good prompt
-- future: use different LoRas for each style/category (ex: pixel art, realistic, etc)
-
-Copy text:
-- Wallpapers with style for free
-- Didn't find what you were looking for? Donate
--
+### Roadmap
+[ ] add 100-500 wallpapers (5-10 styles)
+[ ] add a twitter link for the user that "donated" a wallpaper
+[ ] track the number of downloads for each wallpaper, so we can sort by popular
+[ ] automate donations with gtpt4o and replicate API, so I don't have to make them by hand (or at least simplify my process)
+[ ] "donation" form: users can fill in a style description, color scheme, twitter handle etc 
+[ ] send email to donors with link to the generated wallpapers
+[ ] personal user page with their generated/donated wallpapers
+[ ] desktop wallpapers
+[ ] view top donors?
+[ ] future: use different LoRas for each style/category (ex: pixel art, realistic, etc)
