@@ -62,14 +62,28 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .coming-soon-box {
         border: 5px solid white;
         padding: 20px;
         background: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px); /* For Safari */
+        border-radius: 10px;
     }
-    .overlay h1 {
-        font-size: 6vw;
+    .coming-soon-box h1 {
+        font-size: 5vw;
+        color: white;
+        margin: 0;
+    }
+    .subtext {
+        margin-top: 20px;
+    }
+    .subtext p {
+        font-size: 2vw;
         color: white;
         margin: 0;
     }
@@ -114,7 +128,12 @@
         </div>
     </div>
     <div class="overlay">
-        <h1>COMING SOON</h1>
+        <div class="coming-soon-box">
+            <h1>COMING SOON</h1>
+        </div>
+        <div class="subtext">
+            <p>FREE &bull; NO ADS &bull; NO PAYWALL</p>
+        </div>
     </div>
 </div>
 </body>
